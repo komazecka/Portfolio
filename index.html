@@ -95,15 +95,19 @@
 
  <br>
     <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Kontaktirajte me putem e-maila.</p>
-    <form>
-      <input type="text" name="name" placeholder="Ime i prezime">
-      <input type="email" name="email" placeholder="E-mail">
-      <textarea name="message" placeholder="Poruka"></textarea>
-      <button type="submit">Pošalji</button>
-    </form>
-  </section>
+
+  <h2>Kontakt</h2>
+  <p>Popuni formu i javi mi se!</p>
+
+  <form action="send.php" method="POST" id="contact-form">
+    <input type="text" name="name" placeholder="Ime" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Poruka" required></textarea>
+    <button type="submit">Pošalji</button>
+  </form>
+</section>
+
+  
 
   <footer>
     <p>© 2025 Aleksandra Komazec. Sva prava zadržana.</p>
