@@ -9,10 +9,9 @@
 body {
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(120deg, #f4f6f8, #e0f7fa);
-  text-align: center; /* Centriranje celog teksta po default-u */
+  background: #f0f4f8;
+  text-align: center;
 }
-
 
 header {
   background-color: #fff;
@@ -48,11 +47,20 @@ nav {
   color: #005fcc;
 }
 
+
 section {
   max-width: 1100px;
   margin: 3rem auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
   scroll-margin-top: 100px;
+  border-radius: 15px;
+  background: #ffffff; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+section:nth-of-type(even) {
+  background: #e0f7fa; 
 }
 
 
@@ -67,25 +75,26 @@ h2 {
   color: #0077ff;
 }
 
+
 .skills-list,
 .languages-list,
 .education-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centriranje stavki */
+  justify-content: center;
   gap: 1rem;
-  text-align: center; /* Centriranje teksta unutar stavki */
+  text-align: center;
 }
 
 .skills-list li,
 .languages-list li,
 .education-list li {
-  background: #e0f7fa;
+  background: #0077ff; 
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   font-weight: 500;
-  color: #0077ff;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -93,7 +102,7 @@ h2 {
 .languages-list li:hover,
 .education-list li:hover {
   transform: translateY(-3px);
-  background: #b2ebf2;
+  background: #005fcc; 
 }
 
 
@@ -119,8 +128,6 @@ h2 {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
-
-
 
 .project-card img {
   max-width: 100%;
@@ -184,11 +191,12 @@ button:hover {
   background: #005fcc;
 }
 
+
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   background: #e0f7fa;
-  margin-top: 3rem;
-  font-size: 0.95rem;
   color: #0077ff;
+  border-radius: 10px;
+  margin-top: 3rem;
 }
