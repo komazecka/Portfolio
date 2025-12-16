@@ -1,7 +1,4 @@
-h1, h2, h3, p {
-  text-align: center;
-}
-
+/* Reset i osnovno */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +10,10 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f6f8;
+  text-align: center; /* Centriranje celog teksta po default-u */
 }
 
-
+/* Header */
 header {
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -50,38 +48,32 @@ nav {
   color: #0077ff;
 }
 
+/* Sekcije */
 section {
   max-width: 1100px;
   margin: 3rem auto;
   padding: 1rem;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px; /* Popravlja problem sticky header-a */
 }
 
+/* Centriranje naslova i paragrafa */
+h1, h2, h3, p {
+  text-align: center;
+}
 
-h1, h2, h3 {
-  margin-bottom: 1rem;
+/* Naslov sekcije */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: #222;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-/* Skills/Languages Lists */
-.skills-list, .languages-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-
+/* Projekti */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  justify-items: center;
 }
 
 .project-card {
@@ -91,6 +83,8 @@ h2 {
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
 }
 
 .project-card:hover {
@@ -125,7 +119,7 @@ h2 {
   background-color: #005fcc;
 }
 
-
+/* Forms */
 form {
   display: flex;
   flex-direction: column;
@@ -160,6 +154,7 @@ button:hover {
   background-color: #005fcc;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
